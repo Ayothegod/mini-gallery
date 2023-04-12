@@ -11,7 +11,6 @@ export default function Home() {
       );
       const data = await response.json();
       setImage(data);
-      console.log(data);
       setImage(data);
     };
     fetchImages();
@@ -25,11 +24,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="bg-slate-100 h-screen">
+        <p className="pt-2 text-xl text-center sm:text-2xl md:text-4xl font-bold mb-2 md:my-2 text-slate-800">Mini Gallery</p>
         {!image ? (
           <p className='font-bold text-4xl flex items-center justify-center h-screen'>Loading...</p>
         ) : (
-          <div className="p-5 container mx-auto">
-            <p className="flex text-xl sm:text-2xl md:text-4xl font-bold mb-5 md:my-5 text-slate-800">
+          <div className="p-2 container mx-auto">
+            <p className=" text-xl text-center sm:text-2xl md:text-4xl font-bold mb-5 md:my-5 text-slate-800">
               Recommended For You
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 ">
