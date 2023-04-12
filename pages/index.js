@@ -39,7 +39,7 @@ export default function Home() {
             </div>
           </div>
         )}
-        <p className='text-center mt-4 text-sm'>Made with ❤ by <a href='www.twitter.com/aiiomide' className='text-purple-500'>AioLabs</a></p>
+        <p className='text-center mt-4 text-sm'>Made with ❤ by <a href='www.twitter.com/aiiomide' className='text-purple-500'>Ayomide</a></p>
       </div>
     </div>
   );
