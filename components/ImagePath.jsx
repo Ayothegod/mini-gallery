@@ -1,15 +1,17 @@
+import Image from "next/image";
+
+
 const ImagePath = (props) => {
   return (
     <div className=" p-3 shadow-lg bg-white rounded-md  ">
-      <img
+      <Image
         src={props.urls.small}
         alt={props.user.username}
-        loading="lazy"
         className="h-52 lg:h-72 w-full object-cover rounded-md"
       />
       <div className="text-sm flex mt-3 items-center justify-between">
       <div className="flex items-center">
-          <img
+          <Image
             src={props.user.profile_image.small}
             alt={props.user.username}
             className="h-8 w-8 md:h-10 md:w-10 object-cover rounded-full border border-slate-400"
